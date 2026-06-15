@@ -1,4 +1,4 @@
-# Saccharomyces cerevisiae Chr 4 Splice Site RNN (GRU) AI Model Project
+# Saccharomyces cerevisiae Chromosome 4 Splice Site RNN (GRU) AI Model Project
 
 This project is an end-to-end deep learning pipeline built from scratch in PyTorch to classify eukaryotic genomic data. This project programmatically downloads Chromosome IV of Baker's Yeast (*Saccharomyces cerevisiae*), processes millions of raw nucleotides, and uses a **Gated Recurrent Unit (GRU)** network to discover true biological splice-site motifs hidden in genetic noise.
 
