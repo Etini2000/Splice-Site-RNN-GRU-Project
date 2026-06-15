@@ -20,7 +20,7 @@ AI models cannot read raw text; they require clean, balanced numerical inputs. T
 
 ---
 
-## 🛠️ Pipeline Architecture & Code Walkthrough
+## Pipeline Architecture & Code Walkthrough
 
 ### 1. Data Retrieval (`download_yeast_genome`)
 Uses the **Biopython Entrez** library to fetch RefSeq Accession `NC_001136` (Yeast Chromosome IV). Includes smart local caching to prevent redundant internet downloads.
@@ -38,18 +38,17 @@ Implements a custom sub-classed `nn.Module` containing:
 
 ---
 
-## 📊 Performance & Optimization
+## Performance & Optimization
 
 The network was trained for 100 epochs using **Binary Cross Entropy with Logits Loss (`BCEWithLogitsLoss`)** and the **Adam Optimizer** (Learning Rate = 0.001). 
 
 - **Baseline Challenge:** Because the dataset is perfectly balanced, random coin-flip guessing yields exactly 50% accuracy.
 - **Result:** The model successfully drops optimization loss and breaks past the random guessing barrier, proving the GRU effectively learned sequence rules from raw genetic structures.
 
-*(Tip: Upload your Crimson Loss Curve plot image to your repository and link it right here!)*
 
 ---
 
-## 💻 Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 - **Language:** Python 3
 - **Deep Learning Framework:** PyTorch
@@ -58,21 +57,3 @@ The network was trained for 100 epochs using **Binary Cross Entropy with Logits 
 - **Data Visualization:** Matplotlib
 
 ---
-
-## 🔧 How to Run Locally
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com
-   cd YOUR_REPO_NAME
-   ```
-
-2. Install the necessary libraries:
-   ```bash
-   pip install torch numpy biopython matplotlib
-   ```
-
-3. Run the scripts sequentially or execute the master file:
-   ```bash
-   python main.py
-   ```
